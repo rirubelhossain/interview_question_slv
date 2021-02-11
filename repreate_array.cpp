@@ -10,13 +10,17 @@ void call_repeate(int ar[] , int size , int update_array[] )
         {
             if( ar[i] == ar[j])
             {
-                cout<<ar[i]<<" " ;
+               /// cout<<ar[i]<<" " ;
                 update_array[count] = ar[i] ;
                 ++count ;
             }
-
         }
     }
+    for(int i = 0 ; i < count ; ++i )
+        cout<<update_array[i]<<" ";
+
+
+
 }
 
 int main()
@@ -26,8 +30,7 @@ int main()
     int update_array[size_a] ;
     call_repeate(ar , size_a , update_array);
 
-    for(int i = 0 ; i < size_a ; ++i)
-        cout<<update_array[i]<<" ";
+
 
 
     return(0);
